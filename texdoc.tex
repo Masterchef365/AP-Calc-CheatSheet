@@ -1,0 +1,162 @@
+\documentclass[12pt, english]{article}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\date{}
+\title{ AP Calculus Cheat Sheet }
+\begin{document}
+\author{
+	v1.3
+}
+
+\maketitle
+
+\section{Derivatives}
+\begin{equation}
+	f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} x^n = nx^{n-1}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} c * f(x) = c * f'(x)
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} c = 0
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} [f(x)+g(x)] = f'(x)+g'(x)
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} e^x = e^x
+\end{equation}
+
+\begin{equation}
+	e = \lim_{b \to \infty} (1+\frac{1}{b})^b
+\end{equation}
+
+\begin{equation}
+	y-y_1 = m(x-x_1)
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} \ln x = \frac{1}{x}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx} cx = c
+\end{equation}
+
+\section{Identities}
+Trig Identities
+\begin{equation}
+	tan\ \theta = \frac{sin\ \theta}{cos\ \theta}
+\end{equation}
+
+Rules of logarithms 
+\begin{equation}
+	log_b (b^x) = x
+\end{equation}
+
+\begin{equation}
+	b^{(log_{b}\ x)} = x
+\end{equation}
+
+\begin{equation}
+	log_{b}\ a^n = n \cdot log_b\ a
+\end{equation}
+
+Rules of exponents 
+\begin{equation}
+	\left(
+		\frac{a}{b}
+	\right)
+		^n = \frac{a^n}{b^n}
+\end{equation}
+
+\begin{equation}
+	(x^a)^b = x^{ab}
+\end{equation}
+
+\begin{equation}
+	x^a \cdot x^b = x^{a + b}
+\end{equation}
+
+\begin{equation}
+	x^{-n} = \frac{1}{x^n}
+\end{equation}
+
+\begin{equation}
+	\frac{a}{x} \cdot \frac{b}{x} \cdot \frac{c}{x} \cdot ... = (a \cdot b \cdot c \cdot ...)^{1/x}
+\end{equation}
+
+\section{Domain No-nos}
+\begin{enumerate}
+\item Divide by 0
+\item $\sqrt{-x}$
+\item $log\ 0$ or $ln\ 0$ or $log_x\ 0$
+\item $log\ -x$
+\item $sin^{-1}(2)$
+\end{enumerate}
+
+\section{Factoring reminder}
+\begin{equation}
+	\frac{3450}{1080} = \frac{2*5*5*3*23}{2*5*2*3*3*2*3} = \frac{5*23}{2*3*2*3} = \frac{115}{36}
+\end{equation}
+
+\section{Limit solving examples}
+\text{By factoring and cancelling}
+(Only applies in limits)
+\begin{equation}
+	\frac{\sqrt{x}-4}{x-16} = \frac{\sqrt{x}-4}{(\sqrt{x}+4)(\sqrt{x}-4)} = \frac{1}{\sqrt{x}+4}
+\end{equation}
+
+\text{Reduction}
+\begin{equation}
+	\begin{split}
+		\lim_{x \to \infty} \sqrt{9x^2 + x} - 3x \\
+		\\
+		\lim_{x \to \infty} \frac{\sqrt{9x^2 + x} - 3x}{1} \\
+		\\
+		\lim_{x \to \infty} \frac{\sqrt{9x^2 + x} - 3x}{1} * \frac{\sqrt{9x^2 + x} + 3x}{\sqrt{9x^2 + x} + 3x} \\
+		\\
+		\lim_{x \to \infty} \frac{9x^2 + x - 9x^2}{\sqrt{9x^2 + x} + 3x} \\
+		\\
+		\lim_{x \to \infty} \frac{x}{\sqrt{9x^2 + x} + 3x} * \frac{\frac{1}{x}}{\frac{1}{x}} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{\frac{\sqrt{9x^2 + x}}{x} + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{\sqrt{\frac{9x^2 + x}{x^2}} + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{\sqrt{\frac{9x^2}{x^2} + \frac{x}{x^2}} + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{\sqrt{9 + \frac{1}{\infty}} + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{\sqrt{9 + 0} + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{3 + 3} \\
+		\\
+		\lim_{x \to \infty} \frac{1}{6} = \frac{1}{6} \\
+	\end{split}
+\end{equation}
+
+\text{Solve by IVT}
+\begin{equation}
+	\begin{split}
+		f(x) = 5x^4 - 3x^2 + 2x - 1 \\
+		\text{show  } f(c) = 0 \text{ for some }
+		c \in \mathbb{R} \\
+		f(0) = -1 \text{ and } f(1) = 3 \\
+		\text{ thus } \exists \text { } c \in (0,1) \text{ such that } f(c) = 0 \text{ by IVT } 
+	\end{split}
+\end{equation}
+
+	Squeeze Theorem:
+	Short notes because I'm too tired; Basically, use inequalities on both sides to 
+	shrink down the space until you get it to a point that both are equal then you've solved it.
+
+\end{document}
