@@ -5,26 +5,45 @@
 \title{ AP Calculus Cheat Sheet }
 \begin{document}
 \author{
-	v1.4
+	v1.5
 }
 
 \maketitle
+\tableofcontents
+\newpage
 
 \section{Derivatives}
-\begin{equation*}
-\begin{aligned}
-	f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \\
-	\frac{d}{dx} x^n = nx^{n-1} \\
-	\frac{d}{dx} c * f(x) = c * f'(x) \\
-	\frac{d}{dx} c = 0 \\
-	\frac{d}{dx} [f(x)+g(x)] = f'(x)+g'(x) \\
-	\frac{d}{dx} e^x = e^x \\
-	e = \lim_{b \to \infty} (1+\frac{1}{b})^b \\
-	y-y_1 = m(x-x_1) \\
-	\frac{d}{dx} \ln x = \frac{1}{x} \\
-	\frac{d}{dx} cx = c \\
-\end{aligned}
-\end{equation*}
+\subsection{Using limits to calculate derivatives}
+	\begin{equation}
+		\frac{d}{dx} f(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+	\end{equation}
+
+\subsection{Utilities}
+\text{Power rule:}
+\begin{equation}
+		\frac{d}{dx} x^n = nx^{n-1}
+\end{equation}
+
+\noindent
+\text{Chain rule:}
+\begin{equation}
+		\frac{d}{dx} (f(x) \circ g(x)) = f'(g(x)) * g'(x)
+\end{equation}
+
+\begin{equation}
+	\begin{aligned}
+		\frac{d}{dx} c * f(x) = c * f'(x) \\
+		\frac{d}{dx} c = 0 \\
+		\frac{d}{dx} [f(x)+g(x)] = f'(x)+g'(x) \\
+		\frac{d}{dx} e^x = e^x \\
+		e = \lim_{b \to \infty} (1+\frac{1}{b})^b \\
+		y-y_1 = m(x-x_1) \\
+		\frac{d}{dx} \ln x = \frac{1}{x} \\
+		\frac{d}{dx} cx = c \\
+		\frac{d}{dx} \log_{b} x = \frac{1}{x} * \frac{1}{\ln b} \\
+		\frac{d}{dx} f^{-1}(x) = \frac{1}{f'(f^{-1}(x))} \\
+	\end{aligned}
+\end{equation}
 
 \section{Identities}
 Trig Identities
@@ -34,31 +53,31 @@ Trig Identities
 
 Rules of logarithms 
 \begin{equation}
-\begin{aligned}
-	log_b (b^x) = x
-	b^{(log_{b}\ x)} = x
-	log_{b}\ a^n = n \cdot log_b\ a
-\end{aligned}
+	\begin{aligned}
+		log_b (b^x) = x
+		b^{(log_{b}\ x)} = x
+		log_{b}\ a^n = n \cdot log_b\ a
+	\end{aligned}
 \end{equation}
 
 Rules of exponents 
 \begin{equation}
-\begin{aligned}
-	\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \\
-	(x^a)^b = x^{ab} \\
-	x^a \cdot x^b = x^{a + b} \\
-	x^{-n} = \frac{1}{x^n} \\
-	\frac{a}{x} \cdot \frac{b}{x} \cdot \frac{c}{x} \cdot ... = (a \cdot b \cdot c \cdot ...)^{1/x} \\
-\end{aligned}
+	\begin{aligned}
+		\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \\
+		(x^a)^b = x^{ab} \\
+		x^a \cdot x^b = x^{a + b} \\
+		x^{-n} = \frac{1}{x^n} \\
+		\frac{a}{x} \cdot \frac{b}{x} \cdot \frac{c}{x} \cdot ... = (a \cdot b \cdot c \cdot ...)^{1/x} \\
+	\end{aligned}
 \end{equation}
 
 \section{Domain No-nos}
 \begin{enumerate}
-\item Divide by 0
-\item $\sqrt{-x}$
-\item $log\ 0$ or $ln\ 0$ or $log_x\ 0$
-\item $log\ -x$
-\item $sin^{-1}(2)$
+	\item Divide by 0
+	\item $\sqrt{-x}$
+	\item $log\ 0$ or $ln\ 0$ or $log_x\ 0$
+	\item $log\ -x$
+	\item $sin^{-1}(2)$
 \end{enumerate}
 
 \section{Factoring reminder}
