@@ -5,7 +5,7 @@
 \title{ AP Calculus Cheat Sheet }
 \begin{document}
 \author{
-	v1.5
+	v1.6
 }
 
 \maketitle
@@ -21,37 +21,155 @@
 \subsection{Utilities}
 \text{Power rule:}
 \begin{equation}
-		\frac{d}{dx} x^n = nx^{n-1}
+	\frac{d}{dx} x^n = nx^{n-1}
 \end{equation}
 
 \noindent
 \text{Chain rule:}
 \begin{equation}
-		\frac{d}{dx} (f(x) \circ g(x)) = f'(g(x)) * g'(x)
+	\frac{d}{dx} (f(x) \circ g(x)) = f'(g(x)) * g'(x)
 \end{equation}
 
+\noindent
+\text{Derivatives of inverses}
 \begin{equation}
-	\begin{aligned}
-		\frac{d}{dx} c * f(x) = c * f'(x) \\
-		\frac{d}{dx} c = 0 \\
-		\frac{d}{dx} [f(x)+g(x)] = f'(x)+g'(x) \\
-		\frac{d}{dx} e^x = e^x \\
-		e = \lim_{b \to \infty} (1+\frac{1}{b})^b \\
-		y-y_1 = m(x-x_1) \\
-		\frac{d}{dx} \ln x = \frac{1}{x} \\
-		\frac{d}{dx} cx = c \\
-		\frac{d}{dx} \log_{b} x = \frac{1}{x} * \frac{1}{\ln b} \\
-		\frac{d}{dx} f^{-1}(x) = \frac{1}{f'(f^{-1}(x))} \\
-	\end{aligned}
+	\frac{d}{dx} f^{-1}(x) = \frac{1}{f'(f^{-1}(x))} 
+\end{equation}
+
+\noindent
+\text{Derivatives of logbase}
+\begin{equation}
+	\frac{d}{dx} \log_{b} x = \frac{1}{x} * \frac{1}{\ln b} 
+\end{equation}
+
+\noindent
+\text{Derivative of a multiplier}
+\begin{equation}
+	\frac{d}{dx} cx = c 
+\end{equation}
+
+\noindent
+\text{Derivative of natural log}
+\begin{equation}
+	\frac{d}{dx} \ln x = \frac{1}{x} 
+\end{equation}
+
+\noindent
+\text{Derivative of multiplication}
+\begin{equation}
+	\frac{d}{dx} fg = f'g + fg'
+\end{equation}
+
+\noindent
+\text{Quotient Rule}
+\begin{equation}
+	\frac{d}{dx} \left(\frac{f}{g}\right) = \frac{f'g - fg'}{g^2}
+\end{equation}
+
+\noindent
+\text{Tangent line equation}
+\begin{equation}
+	y-y_1 = m(x-x_1) 
+\end{equation}
+
+\noindent
+\text{Definition of euler's number}
+\begin{equation}
+	e = \lim_{b \to \infty} (1+\frac{1}{b})^b 
+\end{equation}
+
+\noindent
+\text{Derivative of $e^x$}
+\begin{equation}
+	\frac{d}{dx} e^x = e^x 
+\end{equation}
+
+\noindent
+\text{Derivative of constant}
+\begin{equation}
+	\frac{d}{dx} c = 0 
+\end{equation}
+
+\noindent
+\text{Derivative of addition}
+\begin{equation}
+	\frac{d}{dx} [f(x)+g(x)] = f'(x)+g'(x) 
+\end{equation}
+
+\noindent
+\text{Derivative of function multiplied by a constant}
+\begin{equation}
+	\frac{d}{dx} c * f(x) = c * f'(x) 
 \end{equation}
 
 \section{Identities}
 Trig Identities
 \begin{equation}
-	tan\ \theta = \frac{sin\ \theta}{cos\ \theta}
+	\tan \theta = \frac{\sin \theta}{\cos \theta}
 \end{equation}
 
-Rules of logarithms 
+\noindent
+\text{Derivative of }
+\begin{equation}
+	\frac{d}{dx} 
+\end{equation}
+
+\noindent
+\text{Derivative of cosine}
+\begin{equation}
+	\frac{d}{dx} \cos x = -\sin x
+\end{equation}
+
+\noindent
+\text{Derivative of sine}
+\begin{equation}
+	\frac{d}{dx} \sin x = \cos x
+\end{equation}
+
+\noindent
+\text{Derivative of tangent}
+\begin{equation}
+	\frac{d}{dx} \tan x = \sec^2 x
+\end{equation}
+
+\noindent
+\text{Derivative of cotangent}
+\begin{equation}
+	\frac{d}{dx} \cot x = \csc^2 x
+\end{equation}
+
+\noindent
+\text{Derivative of secant}
+\begin{equation}
+	\frac{d}{dx} \sec x = \sec x \tan x
+\end{equation}
+
+\noindent
+\text{Derivative of cosecant}
+\begin{equation} 
+	\frac{d}{dx} \csc x = -\csc x \cot x
+\end{equation}
+
+\noindent
+\text{Derivative of inverse sine}
+\begin{equation}
+	\frac{d}{dx} \sin^{-1} x = \frac{1}{\sqrt{1-x^2}}
+\end{equation}
+
+\noindent
+\text{Derivative of inverse tangent}
+\begin{equation}
+	\frac{d}{dx} \tan^{-1} x = \frac{1}{1+x^2}
+\end{equation}
+
+\noindent
+\text{Pythagorean theorem with sin/cos}
+\begin{equation}
+	\sin ^{2}(x)+\cos ^{2}(x)=1
+\end{equation}
+
+\noindent
+\text{Rules of logarithms}
 \begin{equation}
 	\begin{aligned}
 		log_b (b^x) = x
@@ -60,7 +178,8 @@ Rules of logarithms
 	\end{aligned}
 \end{equation}
 
-Rules of exponents 
+\noindent
+\text{Rules of exponents}
 \begin{equation}
 	\begin{aligned}
 		\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \\
